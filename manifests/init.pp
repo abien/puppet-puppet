@@ -45,6 +45,9 @@
 #                     You can also use certain values like 'latest'.
 #                     Defaults to 'present'.
 #
+# $puppet_master::    specifiy the name of the puppet master
+#                     Defaults to 'unset'
+#
 # === Usage:
 #
 # * Simple usage:
@@ -72,7 +75,8 @@ class puppet (
   $agent_template      = $puppet::params::agent_template,
   $auth_template       = $puppet::params::auth_template,
   $nsauth_template     = $puppet::params::nsauth_template,
-  $version             = $puppet::params::version
+  $version             = $puppet::params::version,
+  $puppet_master       = $puppet::params::puppet_master
 ) inherits puppet::params {
   class { 'puppet::install': }~>
   class { 'puppet::config': }
