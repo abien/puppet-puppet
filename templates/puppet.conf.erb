@@ -42,7 +42,7 @@
     masterport  = <%= scope.lookupvar("::puppet::port") rescue 8140 %>
     environment = <%= @environment %>
     certname    = <%= @clientcert %>
-    server      = <%= scope.lookupvar('::puppet:puppet_master') %>
+    server      = <%= scope.lookupvar('::puppet::puppet_master') %>
     listen      = <%= scope.lookupvar('::puppet::listen') %>
     splay       = <%= scope.lookupvar('::puppet::splay') %>
     runinterval = <%= scope.lookupvar('::puppet::runinterval') %>
