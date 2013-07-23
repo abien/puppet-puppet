@@ -21,7 +21,7 @@ class puppet::params {
   $runmode             = 'service'
   $agent_noop          = false
   $external_nodes      = '/etc/puppet/node.rb'
-  $puppet_master       = undef
+  $puppet_master       = 'puppet'
 
 
   # Need your own config templates? Specify here:
