@@ -1,8 +1,6 @@
 # Default parameters
 class puppet::params {
 
-  include foreman::params
-
   # Basic config
   $version             = 'present'
   $user                = 'puppet'
