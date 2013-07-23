@@ -46,7 +46,7 @@
 #                     Defaults to 'present'.
 #
 # $puppet_master::    specifiy the name of the puppet master
-#                     Defaults to 'unset'
+#                     Defaults to 'puppet'
 #
 # === Usage:
 #
