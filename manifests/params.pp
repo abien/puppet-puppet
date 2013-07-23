@@ -8,6 +8,7 @@ class puppet::params {
   $dir                 = '/etc/puppet'
   $vardir              = '/var/lib/puppet'
   $ca                  = true
+  $ca_server           = false
   $service_fallback    = true
   $port                = 8140
   $listen              = false
