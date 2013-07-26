@@ -1,5 +1,5 @@
 # Puppet module for installing Puppet agent
-# stolen & stripped from theforeman
+(stolen & stripped from theforeman)
 
 Installs Puppet agent:
 
